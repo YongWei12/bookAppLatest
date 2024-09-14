@@ -10,7 +10,5 @@ import java.util.Optional;
 
 @Repository
 public interface AuthorRepository extends JpaRepository<Author, AuthorId> {
-    // Additional query methods can be defined here
-
     Optional<Author> findByNameAndBirthday(String name, LocalDate birthday);
 }

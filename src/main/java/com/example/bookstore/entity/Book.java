@@ -42,7 +42,7 @@ public class Book {
         this.authors = authors;
     }
 
-    // Getters and setters...
+    // Getters and setters
 
     public String getIsbn() {
         return isbn;

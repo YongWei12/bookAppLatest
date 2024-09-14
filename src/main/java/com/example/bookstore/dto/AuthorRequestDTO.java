@@ -13,7 +13,7 @@ public class AuthorRequestDTO {
     @NotNull(message = "Author birthday is mandatory")
     private LocalDate birthday;
 
-    // Constructors, getters, and setters...
+    // Constructors, getters, and setters
 
     public AuthorRequestDTO() {}
 

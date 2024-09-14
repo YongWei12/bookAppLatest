@@ -26,7 +26,7 @@ public class BookRequestDTO {
     @NotEmpty(message = "At least one author is required")
     private Set<AuthorRequestDTO> authors;
 
-    // Constructors, getters, and setters...
+    // Constructors, getters, and setters
 
     public BookRequestDTO() {}
 
