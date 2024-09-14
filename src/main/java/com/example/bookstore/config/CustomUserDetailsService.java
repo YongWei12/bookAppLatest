@@ -1,4 +1,4 @@
-package com.example.bookstore.service;
+package com.example.bookstore.config;
 
 import com.example.bookstore.entity.User;
 import com.example.bookstore.repository.UserRepository;
