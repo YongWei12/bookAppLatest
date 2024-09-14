@@ -20,9 +20,12 @@ public class Book {
 
     @ManyToMany(cascade = { CascadeType.PERSIST, CascadeType.MERGE })
     @JoinTable(
-            name = "BOOK_AUTHOR",
+            name = "BOOK_AUTHORS",
             joinColumns = @JoinColumn(name = "book_isbn"),
-            inverseJoinColumns = @JoinColumn(name = "author_id")
+            inverseJoinColumns = {
+                    @JoinColumn(name = "author_name", referencedColumnName = "name"),
+                    @JoinColumn(name = "author_birthday", referencedColumnName = "birthday")
+            }
     )
     private Set<Author> authors;
 

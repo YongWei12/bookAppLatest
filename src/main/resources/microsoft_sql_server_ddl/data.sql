@@ -17,6 +17,6 @@ INSERT INTO book_authors (book_isbn, author_name, author_birthday) VALUES ('9780
 
 --inserting users
 INSERT INTO USER_TABLE (username, password, role, enabled) VALUES
-('user1', '$2a$10$9geUaGPZIZxk.AMgTfIc/uVec.EGDX3F8xwNfeYnpcTGZg6eqVfoq', 'ROLE_USER', true),
-('admin', '$2a$10$3bCHRt2LPcd6y21N9sXiy.SAHQNST1NbbcCORLroO1vRzEwxunZDW', 'ROLE_ADMIN', true);
+('user1', '$2a$10$9geUaGPZIZxk.AMgTfIc/uVec.EGDX3F8xwNfeYnpcTGZg6eqVfoq', 'ROLE_USER', 1),
+('admin', '$2a$10$3bCHRt2LPcd6y21N9sXiy.SAHQNST1NbbcCORLroO1vRzEwxunZDW', 'ROLE_ADMIN', 1);
 --password are password1, adminpass

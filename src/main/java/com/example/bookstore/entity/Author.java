@@ -3,32 +3,28 @@ package com.example.bookstore.entity;
 import jakarta.persistence.*;
 
 import java.time.LocalDate;
+import java.util.Set;
 
 @Entity
+@IdClass(AuthorId.class)
 @Table(name = "AUTHOR")
 public class Author {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
     private String name;
+
+    @Id
     private LocalDate birthday;
 
-    // Constructors, Getters, and Setters
+    @ManyToMany(mappedBy = "authors")
+    private Set<Book> books;
+
+    // Constructors, getters, and setters...
 
     public Author() {}
 
     public Author(String name, LocalDate birthday) {
         this.name = name;
         this.birthday = birthday;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public String getName() {
